@@ -26,6 +26,16 @@ The form posts to [FormSubmit](https://formsubmit.co) and delivers to `services@
 
 The first submission sends a confirmation email to that address. Click the confirm link once. After that, requests arrive as normal email.
 
+## Future: $1 review fee
+
+The form is free today. When you want people to pay $1 before a request is reviewed:
+
+1. Create a Stripe Payment Link for $1.
+2. Set the success URL to `https://services.burtlabs.org/#contact?paid=1`.
+3. Replace the form’s submit button with a “Pay $1 to send request” flow that only posts after that query string is present.
+
+Keep the mailto fallback so existing customers can still write directly.
+
 ## Local preview
 
 Open `index.html` in a browser, or from this folder:

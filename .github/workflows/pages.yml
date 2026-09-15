@@ -26,7 +26,7 @@ jobs:
       - name: Stage static site
         run: |
           mkdir _site
-          cp index.html thanks.html 404.html CNAME styles.css README.md og.svg portrait.js _site/
+          cp index.html thanks.html 404.html CNAME styles.css README.md og.svg _site/
           touch _site/.nojekyll
           if [ -d assets ]; then cp -r assets _site/; fi
       - name: Configure Pages
