@@ -4,7 +4,7 @@ One-page site for local computer repair serving Ellis County, Texas.
 
 Live URL: [services.burtlabs.org](https://services.burtlabs.org)
 
-The whole site is `index.html` plus the portrait in `assets/`. GitHub Pages deploys from `main`.
+The whole site is `index.html` plus images in `assets/`. GitHub Pages deploys from `main`.
 
 Custom domain: `CNAME` → `services.burtlabs.org`
 
