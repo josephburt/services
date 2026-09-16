@@ -20,7 +20,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231a2744'/%3E%3Cpolygon points='32,10 38,24 54,26 42,36 46,52 32,43 18,52 22,36 10,26 26,24' fill='%23f4f0e6'/%3E%3C/svg%3E">
   <link rel="preload" as="image" href="assets/burt-portrait-800.webp" type="image/webp" imagesrcset="assets/burt-portrait-800.webp 800w, assets/burt-portrait-1200.webp 1200w" imagesizes="(max-width: 820px) 92vw, 28rem">
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Burt Labs Services","url":"https://services.burtlabs.org/","email":"services@heyitsburt.com","image":"https://services.burtlabs.org/assets/og.jpg","address":{"@type":"PostalAddress","addressLocality":"Palmer","addressRegion":"TX","addressCountry":"US"},"areaServed":{"@type":"AdministrativeArea","name":"Ellis County, Texas"},"description":"Computer repair for homes and small shops in Ellis County, Texas. Drop-off and house calls by appointment."}
+    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Burt Labs Services","url":"https://services.burtlabs.org/","telephone":"+19453434054","email":"services@heyitsburt.com","image":"https://services.burtlabs.org/assets/og.jpg","address":{"@type":"PostalAddress","addressLocality":"Palmer","addressRegion":"TX","addressCountry":"US"},"areaServed":{"@type":"AdministrativeArea","name":"Ellis County, Texas"},"openingHours":"By appointment","description":"Computer repair for homes and small shops in Ellis County, Texas. Drop-off and house calls by appointment."}
   </script>
   <style>
     :root {
@@ -77,6 +77,19 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
+    .nav-end {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+    .nav-phone {
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
     .nav-cta {
       background: var(--navy);
       color: var(--paper) !important;
@@ -85,6 +98,7 @@
       border-radius: 999px;
       font-weight: 600;
       font-size: 0.95rem;
+      white-space: nowrap;
     }
 
     .hero { padding: 40px 0 12px; }
@@ -223,6 +237,8 @@
       .portrait { order: -1; }
       .portrait-frame { max-height: 240px; }
       .row.two { grid-template-columns: 1fr; }
+      .nav-cta { display: none; }
+      .mark-name, .mark-sub { white-space: nowrap; }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -238,7 +254,10 @@
         <span class="mark-name">BURT LABS</span>
         <span class="mark-sub">Ellis County, Texas</span>
       </a>
-      <a class="nav-cta" href="#contact">Request service</a>
+      <div class="nav-end">
+        <a class="nav-phone" href="tel:+19453434054">945-343-4054</a>
+        <a class="nav-cta" href="#contact">Request service</a>
+      </div>
     </div>
   </header>
 
@@ -356,7 +375,7 @@
             <span>House call — premium over drop-off, agreed before the diagnostic</span>
           </label>
           <button class="btn primary" type="submit">Send request</button>
-          <p class="fine">Or email <a href="mailto:services@heyitsburt.com">services@heyitsburt.com</a>.</p>
+          <p class="fine">Or call <a href="tel:+19453434054">945-343-4054</a> · <a href="mailto:services@heyitsburt.com">services@heyitsburt.com</a>.</p>
         </form>
       </div>
     </section>
@@ -364,8 +383,8 @@
 
   <footer class="site-footer">
     <div class="wrap foot">
-      <p>Drop-off by appointment · Ellis County, Texas — Palmer, Waxahachie, Midlothian, Red Oak, Ennis, Italy, Milford, and nearby.</p>
-      <p>© <span id="y"></span> Joseph Burt · Burt Labs · <a href="mailto:services@heyitsburt.com">services@heyitsburt.com</a> · <a href="https://heyitsburt.com">heyitsburt.com</a></p>
+      <p>Drop-off by appointment, or a house call · Ellis County, Texas — Palmer, Waxahachie, Midlothian, Red Oak, Ennis, Italy, Milford, and nearby.</p>
+      <p>© <span id="y"></span> Joseph Burt · Burt Labs · <a href="tel:+19453434054">945-343-4054</a> · <a href="mailto:services@heyitsburt.com">services@heyitsburt.com</a> · <a href="https://heyitsburt.com">heyitsburt.com</a></p>
     </div>
   </footer>
   <script>
